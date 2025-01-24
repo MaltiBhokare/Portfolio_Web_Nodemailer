@@ -1,0 +1,294 @@
+/* About Us Section Styling */
+ /* .about-us-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-us-text {
+    max-width: 600px;
+    margin-right: 40px;
+  }
+  
+  .about-us-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .about-us-description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .btn-about-us {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  .btn-about-us:hover {
+    background-color: #2980b9;
+  }
+  
+  .about-us-image-container {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-us-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-us-image:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .about-us-section {
+      padding: 40px 0;
+    }
+  
+    .about-us-heading {
+      font-size: 2.5rem;
+    }
+  
+    .about-us-description {
+      font-size: 1rem;
+    }
+  
+    .about-us-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-us-text {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .about-us-image-container {
+      margin-top: 20px;
+    }
+  
+    .btn-about-us {
+      font-size: 1rem;
+      padding: 10px 25px;
+    }
+  } 
+   */
+
+/* About Us Section Styling */
+.about-us-section {
+    background: linear-gradient(135deg, #ff5c8f, #00bcd4);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1300px;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Container for centering content */
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content Section: Text and Image */
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* About Text Styling */
+.about-us-text {
+    max-width: 700px;
+    margin-right: 40px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+
+/* Heading with an animated gradient effect */
+.about-us-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: textSlide 1s ease-out;
+}
+
+/* Paragraph styling with animation */
+.about-us-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    animation: fadeInText 1.5s ease-out;
+}
+
+/* Button Styling */
+.btn-about-us {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    animation: fadeIn 2s ease-out;
+}
+
+.btn-about-us:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Profile Image Container Styling */
+.about-us-image-container {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-us-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-us-image:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textSlide {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 40px 20px;
+    }
+
+    .about-us-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-us-description {
+        font-size: 1rem;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-us-image-container {
+        margin-top: 20px;
+    }
+
+    .btn-about-us {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}

@@ -1,0 +1,205 @@
+
+/* Skills Section Styling */
+.skills-section {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 1300px;
+    animation: slideIn 1s ease-out;
+}
+
+/* Container for centering content */
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content Section: Text */
+.skills-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Skills Text Styling */
+.skills-text {
+    max-width: 700px;
+    margin-right: 40px;
+    color: #fff;
+    text-align: left;
+}
+
+.skills-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-out;
+}
+
+.skills-description {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Skills List Styling */
+.skills-list {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+/* Skill Bar Styling */
+.skill-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background: #ecf0f1;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: capitalize;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 10px;
+    background: #ecf0f1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 1s ease-in-out;
+}
+
+.html-progress {
+    width: 90%;
+    background: #e44d26;
+}
+
+.css-progress {
+    width: 85%;
+    background: #1572b6;
+}
+
+.js-progress {
+    width: 80%;
+    background: #f0db4f;
+}
+
+.react-progress {
+    width: 75%;
+    background: #61dbfb;
+}
+
+.node-progress {
+    width: 70%;
+    background: #8cc84b;
+}
+
+/* Button Styling */
+.btn-skills {
+    padding: 12px 30px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    animation: fadeIn 3s ease-out;
+}
+
+.btn-skills:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 50px 20px;
+    }
+
+    .skills-heading {
+        font-size: 2.8rem;
+    }
+
+    .skills-description {
+        font-size: 1rem;
+    }
+
+    .skills-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .btn-skills {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+}

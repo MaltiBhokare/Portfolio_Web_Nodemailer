@@ -1,0 +1,139 @@
+/* Contact Section Styling */
+.contact-section {
+    background: linear-gradient(135deg, #6e7dff, #4a5a9d);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 1300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+  }
+  
+  /* Contact Heading */
+  .contact-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Contact Description */
+  .contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #f1f1f1;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Form Field */
+  .form-field {
+    position: relative;
+    width: 100%;
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .contact-input:focus,
+  .contact-textarea:focus {
+    outline: none;
+    border-color: #6e7dff;
+  }
+  
+  /* Button Styling */
+  .contact-btn {
+    padding: 12px 30px;
+    background-color: #6e7dff;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #4a5a9d;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-heading {
+      font-size: 2.8rem;
+    }
+  
+    .contact-description {
+      font-size: 1rem;
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  
+    .contact-btn {
+      font-size: 1rem;
+    }
+  }
+  
