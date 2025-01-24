@@ -1,6 +1,6 @@
 
 import React from 'react';
-import profileImage from './assets/profile.png'; // Importing the profile image
+import profileImage from './assets/profile.jpg'; // Importing the profile image
 import './Home.css'; // Import the CSS for styling
 import resumeFile from './assets/resume.pdf'; // Import the resume file
 
