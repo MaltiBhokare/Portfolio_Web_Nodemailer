@@ -39,7 +39,7 @@
 
 import React from 'react';
 import './About.css'; // Importing the CSS for styling
-import profileImage from './assets/profile.png'; // Importing the profile image
+import profileImage from './assets/profile.jpg'; // Importing the profile image
 
 const About = () => {
   return (
