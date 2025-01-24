@@ -131,6 +131,11 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema, "users"); // "users" is your collection name
 
+// Test Route to check if the server is working
+app.get("/", (req, res) => {
+  res.send("Server is up and running!");
+});
+
 // API endpoint to handle form submissions
 app.post("/contact", async (req, res) => {
   try {
