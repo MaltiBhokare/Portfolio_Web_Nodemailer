@@ -30,7 +30,7 @@ const Contact = () => {
         setIsSuccess(null); // Reset success message
 
         try {
-            const response = await fetch("http://localhost:5000/contact", {
+            const response = await fetch("https://portfolio-web-nodemailer-api-git-main-maltibhokares-projects.vercel.app/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
