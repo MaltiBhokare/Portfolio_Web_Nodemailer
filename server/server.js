@@ -106,7 +106,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: "", // Your frontend domain
+  origin: "https://portfolio-web-nodemailer-client.vercel.app", // Your frontend domain
   methods: "GET,POST,PUT,DELETE", // Allow specific HTTP methods
   allowedHeaders: "Content-Type,Authorization", // Allow specific headers
 };
